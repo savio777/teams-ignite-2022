@@ -1,6 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
-import Groups from "./src/screens/Groups";
+import { ThemeProvider } from "styled-components";
+
+import theme from "@theme";
+import Groups from "@screens/Groups";
 
 const styles = StyleSheet.create({
   container: {
@@ -10,9 +13,11 @@ const styles = StyleSheet.create({
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Groups />
-      <StatusBar style="light" backgroundColor="#000" />
-    </View>
+    <ThemeProvider theme={theme}>
+      <View style={styles.container}>
+        <Groups />
+        <StatusBar style="light" backgroundColor={theme.colors.gray[600]} />
+      </View>
+    </ThemeProvider>
   );
 }
