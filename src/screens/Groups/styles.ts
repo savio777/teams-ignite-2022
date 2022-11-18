@@ -9,6 +9,7 @@ export const Container = styled.View`
 export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.white};
   font-size: 32px;
+  font-family: ${({ theme }) => theme.font.bold};
 `;
 
 export const ImageLogo = styled.Image`
