@@ -12,7 +12,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Groups />
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor="#000" />
     </View>
   );
 }
