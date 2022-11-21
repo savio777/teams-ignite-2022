@@ -28,7 +28,7 @@ export default function App() {
       <View style={styles.container}>
         {!fontsLoaded ? <Loading /> : <Groups />}
 
-        <StatusBar style="light" backgroundColor={theme.colors.gray[600]} />
+        <StatusBar style="light" backgroundColor="transparent" translucent />
       </View>
     </ThemeProvider>
   );
