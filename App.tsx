@@ -9,6 +9,7 @@ import {
 
 import theme from "@theme";
 import Groups from "@screens/Groups";
+import Loading from "@components/Loading";
 
 const styles = StyleSheet.create({
   container: {
@@ -25,7 +26,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <View style={styles.container}>
-        {!fontsLoaded ? <ActivityIndicator /> : <Groups />}
+        {!fontsLoaded ? <Loading /> : <Groups />}
 
         <StatusBar style="light" backgroundColor={theme.colors.gray[600]} />
       </View>
