@@ -1,9 +1,9 @@
-import Logo from "@assets/logo.png";
+import Header from "@components/Header";
 import * as S from "./styles";
 
 const Groups = () => (
   <S.Container>
-    <S.ImageLogo source={Logo} style={{ width: 100, height: 120 }} />
+    <Header />
     <S.Title>Groups</S.Title>
   </S.Container>
 );
