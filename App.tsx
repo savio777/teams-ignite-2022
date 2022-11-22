@@ -8,8 +8,8 @@ import {
 } from "@expo-google-fonts/roboto";
 
 import theme from "@theme";
-import Groups from "@screens/Groups";
 import Loading from "@components/Loading";
+import NewGroup from "@screens/NewGroup";
 
 const styles = StyleSheet.create({
   container: {
@@ -26,7 +26,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <View style={styles.container}>
-        {!fontsLoaded ? <Loading /> : <Groups />}
+        {!fontsLoaded ? <Loading /> : <NewGroup />}
 
         <StatusBar style="light" backgroundColor="transparent" translucent />
       </View>
