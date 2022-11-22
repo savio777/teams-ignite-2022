@@ -6,12 +6,6 @@ export const Container = styled.View`
   padding: 24px;
 `;
 
-export const Title = styled.Text`
-  color: ${({ theme }) => theme.colors.white};
-  font-size: 32px;
-  font-family: ${({ theme }) => theme.font.bold};
-`;
-
 export const ImageLogo = styled.Image`
   width: 100px;
   height: 120px;
