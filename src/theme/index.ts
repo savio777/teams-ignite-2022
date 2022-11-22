@@ -9,7 +9,7 @@ export default {
 
     red: {
       main: "#F75A68",
-      dar: "#AA2834",
+      dark: "#AA2834",
     },
 
     gray: {
