@@ -1,4 +1,4 @@
-import { FlatList, FlatListProps } from "react-native";
+import Button from "@components/Button";
 import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
@@ -32,6 +32,6 @@ export const CounterPlayers = styled.Text`
   `}
 `;
 
-export const List = styled(FlatList)`
-  max-width: 90%;
+export const ButtonRemove = styled(Button)`
+  margin-top: 12px;
 `;
