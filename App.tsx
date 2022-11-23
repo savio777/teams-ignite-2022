@@ -9,7 +9,7 @@ import {
 
 import theme from "@theme";
 import Loading from "@components/Loading";
-import NewGroup from "@screens/NewGroup";
+import Players from "@screens/Players";
 
 const styles = StyleSheet.create({
   container: {
@@ -26,7 +26,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <View style={styles.container}>
-        {!fontsLoaded ? <Loading /> : <NewGroup />}
+        {!fontsLoaded ? <Loading /> : <Players />}
 
         <StatusBar style="light" backgroundColor="transparent" translucent />
       </View>
