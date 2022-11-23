@@ -6,6 +6,8 @@ import Header from "@components/Header";
 import Highlight from "@components/Highlight";
 import Input from "@components/Input";
 import { Container, Form, HeaderList, CounterPlayers, List } from "./styles";
+import PlayerCard from "@components/PlayerCard";
+import { FlatList } from "react-native";
 
 const Players = () => {
   const [teamsList, setTeamsList] = useState<string[]>([
@@ -17,6 +19,16 @@ const Players = () => {
     "time f",
     "time abc",
     "time g",
+  ]);
+  const [playersList, setPlayersList] = useState([
+    "Sávio",
+    "Silva",
+    "Eduarda",
+    "Joãozinho",
+    "Paulo",
+    "Ana",
+    "José",
+    "Laura",
   ]);
   const [teamSelected, setTeamSelected] = useState(teamsList[0]);
 
@@ -49,6 +61,14 @@ const Players = () => {
         />
         <CounterPlayers>{teamsList.length}</CounterPlayers>
       </HeaderList>
+
+      <FlatList
+        keyExtractor={(item) => item}
+        data={playersList}
+        renderItem={({ item }) => (
+          <PlayerCard name={item} onRemove={() => {}} />
+        )}
+      />
     </Container>
   );
 };
